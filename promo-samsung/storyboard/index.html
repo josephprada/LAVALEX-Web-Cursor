@@ -1,0 +1,59 @@
+<title>Storyboard Samsung 26 lb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;700;800&display=swap">
+<style>
+/* Layout: una columna de escenas; cada escena = ficha de texto + tira de frames verticales */
+:root{--bg:#07142a;--panel:#0d2244;--line:#1c3a66;--fg:#e8f4ff;--muted:#9fbfdf;--cyan:#00BFFF;--yellow:#FFD60A;
+ --display:"Anton",Impact,"Arial Narrow",sans-serif;--body:"Montserrat",system-ui,sans-serif;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:40px 80px;display:flex;flex-direction:column;gap:48px}
+.top{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:start}
+@media (max-width:760px){.top{grid-template-columns:1fr}}
+.eyebrow{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,8vw,84px);line-height:.95;margin:10px 0 18px;text-wrap:balance;letter-spacing:.01em}
+h1 em{font-style:normal;color:var(--yellow)}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 22px}
+.specs{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.specs li{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:700;font-size:13px}
+video{width:100%;max-width:300px;aspect-ratio:9/16;border-radius:22px;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.5);display:block}
+.vidcap{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
+.scene{border-top:1px solid var(--line);padding-top:28px;display:flex;flex-direction:column;gap:12px}
+.scene header{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.num{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)}
+.time{font-variant-numeric:tabular-nums;font-weight:700;color:var(--muted);font-size:13px}
+h2{font-family:var(--display);font-weight:400;font-size:40px;line-height:1;margin:0;letter-spacing:.01em}
+.desc{margin:0;max-width:75ch}
+.vo{margin:0;max-width:75ch;color:var(--muted);font-style:italic}
+.vo b{display:block;font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);margin-bottom:2px}
+.frames{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px;margin-top:8px}
+figure{margin:0;min-width:0}
+figure img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:14px;border:1px solid var(--line);display:block}
+figcaption{font-size:13px;font-weight:700;margin-top:8px;display:flex;gap:8px;align-items:baseline}
+.tc{font-variant-numeric:tabular-nums;color:var(--cyan);font-size:12px}
+.notes{background:var(--panel);border-radius:18px;padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.notes h3{font-family:var(--display);font-weight:400;font-size:24px;margin:0 0 8px}
+.notes ul{margin:0;padding-left:18px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){video{animation:none}}
+</style>
+<div class="wrap">
+ <div class="top">
+  <div>
+   <div class="eyebrow">LAVALEX · Video de venta vertical</div>
+   <h1>Samsung 26 libras <em>en venta</em></h1>
+   <p class="lead">Video para vender una lavadora Samsung de 26 libras, de segunda pero como nueva, con tecnología Digital Inverter y 3 meses de garantía. Usa las fotos reales del equipo y termina llevando a WhatsApp. Abajo están las seis escenas con sus frames clave para pedir ajustes.</p>
+   <ul class="specs"><li>1080 × 1920 · 9:16</li><li>37,6 s · 30 fps</li><li>Fotos reales del producto</li><li>Música y efectos originales</li></ul>
+  </div>
+  <div><video src="preview.mp4" controls playsinline preload="metadata" poster="f_09.50.jpg"></video><div class="vidcap">Vista previa (720p). El máster está en 1080p.</div></div>
+ </div>
+<section class="scene"><header><span class="num">Escena 01</span><span class="time">0:00 – 0:06</span></header><h2>Entrada de logo</h2><p class="desc">Gota, remolino, estallido y el logo se arma con “Venta y alquiler de lavadoras”.</p><p class="vo"><b>Locución opcional</b>(Solo música y efectos)</p><div class="frames"><figure><img src="f_04.90.jpg" alt="Logo + eslogan (04.90 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">4.90 s</span>Logo + eslogan</figcaption></figure></div></section>
+<section class="scene"><header><span class="num">Escena 02</span><span class="time">0:06 – 0:11</span></header><h2>Producto protagonista</h2><p class="desc">“¡EN VENTA!” y “Lavadora Samsung”. La Samsung real, recortada de la foto frontal, sube flotando con rayos y un brillo que la recorre. Entran el sello “26 libras” y el chip “De segunda, como nueva”.</p><p class="vo"><b>Locución opcional</b>“¡Lavadora Samsung de 26 libras en venta, como nueva!”</p><div class="frames"><figure><img src="f_07.20.jpg" alt="Entrada del producto (07.20 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">7.20 s</span>Entrada del producto</figcaption></figure><figure><img src="f_09.50.jpg" alt="Sello 26 libras y estado (09.50 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">9.50 s</span>Sello 26 libras y estado</figcaption></figure></div></section>
+<section class="scene"><header><span class="num">Escena 03</span><span class="time">0:11 – 0:20</span></header><h2>Detalles con fotos reales</h2><p class="desc">Carrusel de tres fotos: el panel y la tapa con Digital Inverter, Wobble y Magic Dispenser; la vista de tres cuartos con los 26 libras y la carga superior; y el lateral, “Como nueva”.</p><p class="vo"><b>Locución opcional</b>“Digital Inverter, 26 libras y como nueva.”</p><div class="frames"><figure><img src="f_12.60.jpg" alt="Digital Inverter (12.60 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">12.60 s</span>Digital Inverter</figcaption></figure><figure><img src="f_15.60.jpg" alt="26 libras (15.60 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">15.60 s</span>26 libras</figcaption></figure><figure><img src="f_18.20.jpg" alt="Como nueva (18.20 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">18.20 s</span>Como nueva</figcaption></figure></div></section>
+<section class="scene"><header><span class="num">Escena 04</span><span class="time">0:20 – 0:27</span></header><h2>Inverter y garantía</h2><p class="desc">Barrido amarillo. “TECNOLOGÍA INVERTER” golpea con confeti; entra el escudo con “3 meses de garantía” y el chip “Revisada y probada”.</p><p class="vo"><b>Locución opcional</b>“Con tecnología Inverter y tres meses de garantía.”</p><div class="frames"><figure><img src="f_20.60.jpg" alt="Golpe Inverter (20.60 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">20.60 s</span>Golpe Inverter</figcaption></figure><figure><img src="f_23.80.jpg" alt="Garantía (23.80 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">23.80 s</span>Garantía</figcaption></figure></div></section>
+<section class="scene"><header><span class="num">Escena 05</span><span class="time">0:27 – 0:32</span></header><h2>Llamado a la acción</h2><p class="desc">“¡Solo hay una! Escríbenos ya”, la lavadora vuelve con el sello “¡Que no te la ganen!” y aparece el botón de WhatsApp con el número.</p><p class="vo"><b>Locución opcional</b>“¡Solo hay una! Escríbenos ya al WhatsApp.”</p><div class="frames"><figure><img src="f_28.00.jpg" alt="Urgencia (28.00 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">28.00 s</span>Urgencia</figcaption></figure><figure><img src="f_30.50.jpg" alt="Botón de WhatsApp (30.50 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">30.50 s</span>Botón de WhatsApp</figcaption></figure></div></section>
+<section class="scene"><header><span class="num">Escena 06</span><span class="time">0:32 – 0:37</span></header><h2>Cierre</h2><p class="desc">Logo, eslogan, botón de WhatsApp y “¡Te esperamos!”.</p><p class="vo"><b>Locución opcional</b>“LAVALEX. ¡Te esperamos!”</p><div class="frames"><figure><img src="f_35.00.jpg" alt="Tarjeta final (35.00 s)" loading="lazy" width="540" height="960"><figcaption><span class="tc">35.00 s</span>Tarjeta final</figcaption></figure></div></section>
+ <div class="notes">
+  <div><h3>Paleta</h3><ul><li>Azul noche #0A1931 y azules del logo #00BFFF / #1E90FF</li><li>Amarillo #FFD60A para el titular y el precio</li><li>Verde WhatsApp solo en el botón de contacto</li></ul></div>
+  <div><h3>Tipografía</h3><ul><li>Anton para los golpes de texto</li><li>Montserrat para apoyos, chips y tagline</li></ul></div>
+  <div><h3>Zonas seguras</h3><ul><li>Texto clave entre 380 y 1600 px de alto para no chocar con la interfaz de Reels/TikTok</li><li>Marca fija arriba de 0:06 a 0:32</li></ul></div>
+ </div>
+</div>
